@@ -1,0 +1,14 @@
+//usando o @mixin e @include
+
+@mixin botao() {
+    border: none;
+    background-color: $brand-blue;
+    border-radius: 20px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $brand-red;
+    }
+}

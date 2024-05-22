@@ -1,0 +1,32 @@
+.info {
+    background-color: $brand-red;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+    p {
+        color: white;
+        max-width: 700px;
+    }
+
+    button {
+        @include botao();
+        padding-left: 30px;
+        padding-right: 30px;
+
+        &:hover {
+            background-color: black;
+        }
+    } 
+
+    @media (max-width: 860px){
+        flex-direction: column;
+        row-gap: 10px;
+        box-sizing: border-box;
+    }
+    
+}

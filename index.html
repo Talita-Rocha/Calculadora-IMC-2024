@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Calculadora IMC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container-imc">
+        <div class="image">
+            <img src="/img/reduzido/ilustracao.png" alt="">
+        </div>
+
+        <div class="content">
+            <img src="/img/logo 1.svg" alt="">
+
+            <h1>Calcule seu IMC</h1>
+            <p>Preencha as informações abaixo para calcular</p>
+
+            <form autocomplete="off">
+                <label for="peso">Digite seu peso</label>
+                <input type="number" id="peso" placeholder="65.0">
+
+                <label for="altura">Digite sua altura</label>
+                <input type="number" id="altura" placeholder="1.70">
+
+                <button id="btn-imc" type="button">Calcular IMC</button>
+                <!-- type="button" se não declarar, por padrão assume o submit -->
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <div class="info">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim nihil animi dolor eaque sint, quasi
+            deleniti temporibus a, minima perferendis harum saepe in! Id laudantium dolor natus molestias autem.</p>
+        <button>Estou ciente</button>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
